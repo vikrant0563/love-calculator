@@ -1,0 +1,333 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.container{
+    width: 100vw;
+    min-height: 100vh;
+    background-image: url(images/back.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.calculator{
+    width: 50rem;
+    height: 37.5rem;
+    border-radius: 0.625rem;
+    background-image: linear-gradient(120deg,#a03a61 0%,#870718 100%);
+    /* display: none; */
+}
+h2{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 1.188rem;
+    color: wheat;
+}
+.content{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    line-height: 5rem;
+    gap: 1.125;
+    margin-top: 1.875rem;
+}
+input{
+    border: none;
+    outline: none;
+    padding: 0.5rem 0.625rem;
+    margin: 0.625rem 0;
+    background: none;
+    border-bottom: 1px solid #fff;
+    font-size: 1.25rem;
+    caret-color: #fff;
+    color: #fff;
+}
+input::placeholder{
+    color: #fff;
+}
+#single{
+    background: none;
+    border: none;
+    margin-right: -5rem;
+    margin-top: 1.25rem;
+}
+#double{
+    background: none;
+    border: none;
+    margin-right: -5rem;
+    margin-top: 1.25rem;
+}
+select{
+    border: none;
+    outline: none;
+    background: none;
+    padding: 0.5rem 0.625rem;
+    margin: 0.625rem 0;
+    font-size: 1.25rem;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+ option{
+    color: #fa7ebd!important;
+}
+.your-input,.partner-input{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    gap: -10px;
+    /* position: relative; */
+}
+
+#calculate{
+    text-align: center;
+    border: 1px solid #fff;
+    outline: none;
+    background: none;
+    color: #fff;
+    padding: 1.25rem 4.375rem;
+    border-radius: 0.625rem;
+    font-size: 1.25rem;
+    margin-top: 3.75rem;
+    transition: 0.4s all;
+    cursor: pointer;
+}
+#calculate:hover{
+    color: #a03a61;
+    background-color: #fff;
+}
+input::before{
+    content: '';
+    background-image: url(single1.jpg);
+    width: 30px;
+}
+
+
+.questioning{
+    width: 800px;
+    height: 600px;
+    border-radius: 10px;
+    background-color: #fff;
+  display: none;
+}
+.nav{
+    width: 100%;
+    height: 4rem;
+    background-color: #870718;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.25rem;
+    letter-spacing: 3px;
+    color: #fff;
+}
+.question{
+    width: 100%;
+    height:90%;
+    padding: 30px;
+    line-height: 30px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: rgb(49, 47, 47);
+}
+.checkBox{
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.checkBox input{
+    margin-right: -8rem;
+    color: #fa7ebd;
+    cursor: pointer;
+}
+#af-Ques{
+    text-align: center;
+    border: 1px solid #a03a61;
+    outline: none;
+    background: none;
+    color: #a03a61;
+    padding: 20px 70px;
+    border-radius: 10px;
+    font-size: 20px;
+    margin-top: 60px;
+    transition: 0.4s all;
+    cursor: pointer;
+}
+#af-Ques:hover{
+    color: #fff;
+    background-color: #870718;
+}
+.input-data{
+    color: rgb(10, 9, 9);
+    font-weight: 700;
+}
+
+/* ============================================================================================================= */
+
+.result{
+    width: 1000px;
+    height: 600px;
+    border-radius: 10px;
+    /* background:#a6a5a570; */
+    background: #d24e4e70;
+   display: none;
+}
+.Circle{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #fff; */
+}
+.cir-div{
+    height: 250px;
+    width: 250px;
+    position: relative;
+}
+.outer{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    padding: 20px;
+    box-shadow: 6px 6px 10px -1px rgb(0,0,0,0.15);
+    background:conic-gradient(#b90303 3.6deg,#ede8ea 0deg);
+        display: flex;
+    justify-content: center;
+    align-items: center;           
+}
+.outer::before{
+    content: "";
+    position: absolute;
+    height: 210px;
+    width: 210px;
+    border-radius: 50%;
+    background-color: #f57075;
+}
+#progress{
+    font-weight: 500;
+    font-size: 30px;
+    position: absolute;
+}
+
+
+.appreciation{
+    width: 100%;
+    height: 30%;
+    /* background-color: #100505; */
+}
+.appreciation p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 10px;
+    margin-inline-end: 10px;
+    font-size: 1rem;
+    color: #fff;
+    padding: 40px;
+    font-family: -apple-system,BlinkMacSystemFont,segoe ui,Roboto,helvetica neue,Arial,noto sans,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol,noto color emoji;
+}
+
+.recalculate-butt{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#recalculate{
+    text-align: center;
+    border: 1px solid #fff;
+    outline: none;
+    background: none;
+    color: #fff;
+    padding: 20px 70px;
+    border-radius: 10px;
+    font-size: 20px;
+    /* margin-top: 60px; */
+    transition: 0.4s all;
+    cursor: pointer;
+}
+#recalculate:hover{
+    background: #fff;
+    color: #870718;
+}
+
+
+@media screen and (max-width :600px){
+    .calculator{
+    max-width: 470px;
+    height: 800px;
+    border-radius: 10px;
+    }
+    h2{
+        font-size: 30px;
+        font-weight: 400;
+        margin-top: 1.188rem;
+    }
+    .your-input{
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+   .partner-input{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    select{
+        margin: 0.625rem 0;
+        font-size: 1.25rem;
+    }
+    #single{
+        margin-right:0 ;
+        margin-top:0 ;
+    }
+    #double{
+        margin-right:0 ;
+        margin-top:0 ;
+    }
+    .questioning{
+        max-width: 470px;
+        height: 800px;
+        border-radius: 10px;
+    }
+    .nav{
+        width: 100%;
+        height: 4rem;
+        padding-left: 1rem;
+        font-size: 1.3rem;
+    
+    }
+    .question{
+
+        line-height: 20px;
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+    .result{
+        max-width: 470px;
+        height: 800px;
+    border-radius: 10px;
+    }
+    .appreciation p {
+       margin-top: -60px;
+       padding: 20px;
+        font-size: 1.14rem;
+        color: #fff;
+      
+    }
+
+} 

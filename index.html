@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Love Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="calculator">
+        <h2>Love Calculator</h2>
+        <div class="content">
+          <div class="your-input">
+            <img src="images/single.png" alt="" width="32px" height="32px" id="single">
+            <input type="text" placeholder="Your Name" id="text-name" required/>
+            <select name="" id="gender" required>
+              <option value="select">Select Gender</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="partner-input">
+            <img src="images/double.png" alt="" width="40px" height="40px" id="double">
+            <input
+              type="text"
+              placeholder="Your Partner's Name"
+              id="text-partner"
+              required
+            />
+            <select name="" id="gender" required>
+              <option value="select">Select Gender</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <button id="calculate">Calculate</button>
+        </div>
+      </div>
+      <!--====================================================================================-->
+      <div class="questioning">
+        <div class="nav">
+          <p>Final step: Answer the questions Honestly!</p>
+        </div>
+        <div class="question">
+          <p>
+            1.Do you consider <span class="input-data"></span> as your best
+            friend?
+          </p>
+          <div class="checkBox">
+            <input type="radio" name="ques1" id="yes" value="yes" checked/>
+            <label for="ques1">Yes</label>
+            <input type="radio" name="ques1" id="no" value="no"/>
+            <label for="ques1">No</label>
+          </div>
+          <p>
+            2. You feel butterflies in your stomach every time you see
+            <span class="input-data"></span>?
+          </p>
+          <div class="checkBox">
+            <input type="radio" name="ques2" id="yes" value="yes" checked/>
+            <label for="ques2">Yes</label>
+            <input type="radio" name="ques2" id="no" value="no"/>
+            <label for="ques2">No</label>
+          </div>
+          <p>
+            3. Do you feel hurt when <span class="input-data"></span> is hurt?
+          </p>
+          <div class="checkBox">
+            <input type="radio" name="ques3" id="yes" value="yes" checked/>
+            <label for="ques3">Yes</label>
+            <input type="radio" name="ques3" id="no" value="no"/>
+            <label for="ques3">No</label>
+          </div>
+          <p>
+            4. Do you share your deepest thoughts with
+            <span class="input-data"></span>?
+          </p>
+          <div class="checkBox">
+            <input type="radio" name="ques4" id="yes" value="yes" checked/>
+            <label for="ques4">Yes</label>
+            <input type="radio" name="ques4" id="no" value="no"/>
+            <label for="ques4">No</label>
+          </div>
+          <p>
+            5. Ever felt weak in the knees on seeing
+            <span class="input-data"></span>?
+          </p>
+          <div class="checkBox">
+            <input type="radio" name="ques5" id="yes" value="yes" checked/>
+            <label for="ques5">Yes</label>
+            <input type="radio" name="ques5" id="no" value="no"/>
+            <label for="ques5">No</label>
+          </div>
+
+          <button id="af-Ques">Calculate</button>
+        </div>
+      </div>
+    <!--===========================================================================-->
+      <div class="result">
+        <div class="Circle">
+          <div class="cir-div">
+            <div class="outer">
+                <div id="progress">45%</div>
+            </div>
+          </div>
+        </div>
+        <div class="appreciation">
+          <p>
+           
+          </p>
+        </div>
+        <div class="recalculate-butt">
+          <button id="recalculate">Recalculate</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
